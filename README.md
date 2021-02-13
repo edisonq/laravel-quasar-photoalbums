@@ -29,3 +29,6 @@ quasarphotoalbums
 ```bash
 php artisan serve
 ```
+
+## API documentation: 
+https://www.getpostman.com/collections/94d52dc431eabcc7ac4d
