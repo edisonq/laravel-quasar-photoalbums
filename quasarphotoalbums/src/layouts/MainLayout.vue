@@ -21,7 +21,6 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-1"
       :breakpoint="400"
     >
       <q-scroll-area
@@ -74,21 +73,21 @@ const linksData = [
     title: "Gallery",
     caption: "Show all pictures",
     icon: "collections",
-    link: "https://quasar.dev",
+    link: "/",
   },
 
   {
     title: "Settings",
-    caption: "Show all pictures",
+    caption: "Change settings",
     icon: "settings",
-    link: "https://quasar.dev",
+    link: "/settings",
   },
 
   {
     title: "Logout",
     caption: "Sign-out",
     icon: "logout",
-    link: "https://awesome.quasar.dev",
+    link: "/logout",
   },
 ];
 

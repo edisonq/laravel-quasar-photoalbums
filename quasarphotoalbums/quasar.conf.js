@@ -76,7 +76,9 @@ module.exports = function (/* ctx */) {
     framework: {
       iconSet: 'material-icons', // Quasar icon set
       lang: 'en-us', // Quasar language pack
-      config: {},
+      config: {
+        dark: 'true' // or Boolean true/false
+      },
 
       // Possible values for "importStrategy":
       // * 'auto' - (DEFAULT) Auto-import needed Quasar components & directives
@@ -114,7 +116,7 @@ module.exports = function (/* ctx */) {
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#1e1e1e',
-        theme_color: '#027be3',
+        theme_color: '#1e1e1e',
         icons: [
           {
             src: 'icons/icon-128x128.png',
