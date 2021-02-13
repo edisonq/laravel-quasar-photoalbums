@@ -1,5 +1,5 @@
 # laravel-quasar-photoalbums 2021
-photo album app made using Quasar and Laravel.
+This an attempt to learn 2 frameworks within 24 hours.  A chance to land a job while having fun learning.  Photo album app made using Quasar and Laravel.
 
 ## Technology:
 - [Laravel 8](https://laravel.com/).
