@@ -13,16 +13,45 @@ Aside from that, I added the migration class.  Make the UI as beautiful as possi
 - and some many more
 
 ## Setup
-- add database laravel
+- setup .env
+
+```bash
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=photoalbums
+DB_USERNAME={dbnamehere}
+DB_PASSWORD=handsomedaddy(.)
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+```
+
+- add database "photoalbums"
 - then run this commands:
 
 ```bash
-npm i && composer install && cd quasarphotoalbums && npm i
+npm i && composer install && cd quasarphotoalbums && npm i && quasar build && cd .. && npm run dev 
 ```
 
 ```bash
 php artisan migrate && php artisan db:seed 
 ```
+
 
 ## Quasar source code
 ```bash
