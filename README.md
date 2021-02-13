@@ -24,6 +24,8 @@ php artisan migrate && php artisan db:seed
 ```bash
 quasarphotoalbums
 ```
+### How it looks like
+<img src="how-it-look-like.gif">
 
 ## running
 ```bash
