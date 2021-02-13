@@ -26,6 +26,38 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
+            
+
+            <!-- address -->
+            <div>
+                <x-label for="address" :value="__('address')" />
+
+                <x-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address')" required autofocus />
+            </div>
+
+
+            <!-- phone -->
+            <div>
+                <x-label for="phone" :value="__('phone')" />
+
+                <x-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autofocus />
+            </div>
+
+
+            <!-- website -->
+            <div>
+                <x-label for="website" :value="__('website')" />
+
+                <x-input id="website" class="block mt-1 w-full" type="text" name="website" :value="old('website')" required autofocus />
+            </div>
+
+            <!-- company -->
+            <div>
+                <x-label for="company" :value="__('company')" />
+
+                <x-input id="company" class="block mt-1 w-full" type="text" name="company" :value="old('company')" required autofocus />
+            </div>
+
             <!-- Password -->
             <div class="mt-4">
                 <x-label for="password" :value="__('Password')" />
@@ -34,15 +66,6 @@
                                 type="password"
                                 name="password"
                                 required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
             </div>
 
             <!-- Confirm Password -->

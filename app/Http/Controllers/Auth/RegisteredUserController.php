@@ -45,6 +45,9 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'username' => $request->email,
+            'website' => $request->website,
+            'phone' => $request->phone,
+            'company' => $request->company,
             'password' => Hash::make($request->password),
             'address' => json_encode(array('test')),
         ]));
