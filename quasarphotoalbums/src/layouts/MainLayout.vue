@@ -11,11 +11,9 @@
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        <q-toolbar-title> Albums </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Albums v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -24,20 +22,42 @@
       show-if-above
       bordered
       content-class="bg-grey-1"
+      :breakpoint="400"
     >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
+      <q-scroll-area
+        style="
+          height: calc(100% - 150px);
+          margin-top: 150px;
+          border-right: 1px solid #ddd;
+        "
+      >
+        <q-list>
+          <q-item-label header class="text-grey-8">
+            Essential Links
+          </q-item-label>
+          <EssentialLink
+            v-for="link in essentialLinks"
+            :key="link.title"
+            v-bind="link"
+          />
+        </q-list>
+      </q-scroll-area>
+
+      <q-img
+        class="absolute-top"
+        src="https://cdn.quasar.dev/img/material.png"
+        style="height: 150px"
+      >
+        <div class="absolute-bottom bg-transparent">
+          <q-avatar size="56px" class="q-mb-sm">
+            <img
+              src="https://avatars.githubusercontent.com/u/1428965?s=400&u=2b6e184a65a058d82560039f86ec15699bd2b659&v=4"
+            />
+          </q-avatar>
+          <div class="text-weight-bold">Edison Quinones</div>
+          <div>@edisonq</div>
+        </div>
+      </q-img>
     </q-drawer>
 
     <q-page-container>
@@ -47,61 +67,39 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+import EssentialLink from "components/EssentialLink.vue";
 
 const linksData = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: "Gallery",
+    caption: "Show all pictures",
+    icon: "collections",
+    link: "https://quasar.dev",
   },
+
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: "Settings",
+    caption: "Show all pictures",
+    icon: "settings",
+    link: "https://quasar.dev",
   },
+
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    title: "Logout",
+    caption: "Sign-out",
+    icon: "logout",
+    link: "https://awesome.quasar.dev",
   },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
 ];
 
 export default {
-  name: 'MainLayout',
+  name: "MainLayout",
   components: { EssentialLink },
-  data () {
+  data() {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
-    }
-  }
-}
+      essentialLinks: linksData,
+    };
+  },
+};
 </script>
