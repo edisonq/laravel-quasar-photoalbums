@@ -15,6 +15,10 @@ photo album app made using Quasar and Laravel.
 npm i && composer install && cd quasarphotoalbums && npm i
 ```
 
+```bash
+php artisan migrate && php artisan db:seed 
+```
+
 ## Quasar source code
 ```bash
 quasarphotoalbums
