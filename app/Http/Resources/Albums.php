@@ -16,8 +16,11 @@ class Albums extends JsonResource
     {
         // return parent::toArray($request);
         return [
-            'userId',
-            'title',
+            'id'         => $this->id,
+            'userId'       => $this->userId,
+            'title'    => $this->title,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at
         ];
     }
 }
