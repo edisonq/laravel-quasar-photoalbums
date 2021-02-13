@@ -1,12 +1,12 @@
 # laravel-quasar-photoalbums 2021
-This an attempt to learn 2 frameworks within 24 hours.  A chance to land a job while having fun learning.  Photo album app made using Quasar and Laravel.
+This an attempt to learn 2 frameworks within 24 hours.  A chance to land a job while having fun learning.  Photo album app made using Quasar and Laravel.  Even I don't land this job I'll continue these technologies for my other projects.
 
-## Technology:
+## Main Technologies:
 - [Laravel 8](https://laravel.com/).
 - [Quasar](https://laravel.com/docs/routing).
 - [Axios](). 
 - [fruitcake/laravel-cors]()
-
+- and some many more
 
 ## Setup
 - add database laravel
