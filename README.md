@@ -5,6 +5,8 @@ It's a Photo album app made using Quasar and Laravel.  A simple CRUD for the pho
 
 Aside from that, I added the migration class.  Make the UI as beautiful as possible.  Proper documentation of API, codes, etc are also added.
 
+The project's incomplete base on goal and time constraints.
+
 ## Main Technologies:
 - [Laravel 8](https://laravel.com/).
 - [Quasar](https://laravel.com/docs/routing).

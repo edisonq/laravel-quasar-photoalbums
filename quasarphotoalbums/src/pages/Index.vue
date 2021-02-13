@@ -34,6 +34,15 @@
 
 <script>
 import { LightGallery } from "vue-light-gallery";
+import { api } from "boot/axios";
+
+api.get("/photos").then(function (response) {
+  console.log(response.data);
+  console.log(response.status);
+  console.log(response.statusText);
+  console.log(response.headers);
+  console.log(response.config);
+});
 
 export default {
   name: "PageIndex",
