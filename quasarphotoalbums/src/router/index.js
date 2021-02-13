@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import LightGallery from 'vue-light-gallery';
+
 
 import routes from './routes'
 
 Vue.use(VueRouter)
+Vue.use(LightGallery)
+
 
 /*
  * If not building with SSR mode, you can
@@ -14,9 +18,12 @@ Vue.use(VueRouter)
  * with the Router instance.
  */
 
-export default function (/* { store, ssrContext } */) {
+export default function ( /* { store, ssrContext } */ ) {
   const Router = new VueRouter({
-    scrollBehavior: () => ({ x: 0, y: 0 }),
+    scrollBehavior: () => ({
+      x: 0,
+      y: 0
+    }),
     routes,
 
     // Leave these as they are and change in quasar.conf.js instead!

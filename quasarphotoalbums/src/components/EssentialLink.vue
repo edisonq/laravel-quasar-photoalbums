@@ -2,6 +2,7 @@
   <q-item
     clickable
     v-ripple
+    exact
     tag="a"
     :href="link"
   >
