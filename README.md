@@ -10,7 +10,8 @@ photo album app made using Quasar and Laravel.
 
 ## Setup
 - add database laravel
-- then run this command
+- then run this commands:
+
 ```bash
 npm i && composer install && cd quasarphotoalbums && npm i
 ```

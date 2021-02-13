@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 
-class PhotoTableSeeder extends Seeder
+class AlbumsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,14 +15,12 @@ class PhotoTableSeeder extends Seeder
      */
     public function run()
     {
-        $json = File::get("database/data/photos.json");
+        $json = File::get("database/data/albums.json");
         $data = json_decode($json);
         foreach ($data as $obj) {
-            DB::table('photos')->insert([
-                'albumid' => $obj->albumId,
+            DB::table('albums')->insert([
+                'userId' => $obj->userId,
                 'title' => $obj->title,
-                'url' => $obj->url,
-                'thumbnailUrl' => $obj->thumbnailUrl,
             ]);
         }
     }
